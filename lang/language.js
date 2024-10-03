@@ -129,7 +129,8 @@ const translations = {
                 kompyuter (yoki kassa monoblok), 2D skaner va kvitansiyalarni chop etish uchun printer kerak bo'ladi.`,
         secondWrapper: `E-POS Cashdesk dasturi biznesni avtomatlashtirish uchun mo'ljallangan. Dasturda chiroyli dizayn, moslashuvchan sozlamalar va tezkor ishlash mavjud. Dastur E-POS Management boshqaruv paneli bilan birgalikda ishlaydi. Biznes boshqaruvi, savdo statistikasini ko'rish va xodimlarni boshqarishni taklif qiladi.`,
         thirdWrapper: ` E-POS boshqaruv paneli E-POS Cashdesk mahsuloti uchun veb-sayt boshqaruv panelidir. Bu biznesni,
-                xodimlarni boshqarish, savdo ma'lumotlarini ko'rish va statistikani yuritish uchun paneldir.`
+                xodimlarni boshqarish, savdo ma'lumotlarini ko'rish va statistikani yuritish uchun paneldir.`,
+        subscribe__data: `Obuna bo'lish`
     },
     en: {
         footerlinksourservice: 'Our service',
@@ -247,7 +248,8 @@ const translations = {
                         you will need a computer (or cash register), a 2D scanner and a printer for printing receipts.`,
         secondWrapper: `E-POS Cashdesk software is designed for business automation. The program has a beautiful design, flexible settings and fast operation. The program works together with the E-POS Management control panel. Offers business management, sales statistics viewing, and employee management.`,
         thirdWrapper: ` E-POS Dashboard is a website dashboard for the E-POS Cashdesk product. this business,
-                        is a panel for managing employees, viewing sales data and keeping statistics.`
+                        is a panel for managing employees, viewing sales data and keeping statistics.`,
+        subscribe__data: `Subscribe`
     },
     ru: {
         footerlinksourservice: 'Наши услуги',
@@ -362,19 +364,22 @@ const translations = {
                         вам понадобится компьютер (или кассовый аппарат), 2D-сканер и принтер для печати чеков.`,
         secondWrapper: `Программное обеспечение E-POS Cashdesk предназначено для автоматизации бизнеса. Программа имеет красивый дизайн, гибкие настройки и быструю работу. Программа работает совместно с панелью управления E-POS Management. Предлагает управление бизнесом, просмотр статистики продаж и управление сотрудниками.`,
         thirdWrapper: ` E-POS Dashboard — это панель веб-сайта для продукта E-POS Cashdesk. этот бизнес,
-                       — панель для управления сотрудниками, просмотра данных о продажах и ведения статистики.`
+                       — панель для управления сотрудниками, просмотра данных о продажах и ведения статистики.`,
+                       subscribe__data: `Подписаться`
     }
 };
+
 
 const dropdownButton = document.getElementById('dropdownButton');
 const dropdownMenu = document.querySelector('.dropdown-menu');
 const dropdown = document.querySelector('.dropdown');
 
 
-
 dropdownButton.addEventListener('click', function () {
     dropdown.classList.toggle('open');
 });
+
+
 
 function changeLanguage(language) {
     document.querySelectorAll(".nav-link").forEach((element) => {
@@ -454,5 +459,6 @@ rightArrow.addEventListener('click', () => {
         behavior: 'smooth'
     });
 });
+
 
 

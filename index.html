@@ -959,17 +959,17 @@
             xizmatlarimiz haqidagi so'nggi
             yangiliklarni oling!</p>
           <form action="forms/newsletter.php" method="post" class="php-email-form">
-            <div class="newsletter-form"><input type="email" name="email"><input type="submit" data-key="subscribeBtn"
-                value="Yangiliklarga ulanish"></div>
-            <div class="loading">Loading</div>
-            <div class="error-message"></div>
-            <div data-key="subscribe" class="sent-message">Obuna soʻrovingiz yuborildi. Rahmat!</div>
-          </form>
+            <div class="newsletter-form"><input type="email" name="email">
+              <button data-key="subscribe__data" class="submit" type="submit">Obuna bo'lish</button>
+              <!-- <div class="loading">Loading</div>
+              <div class="error-message"></div> -->
+              <div data-key="subscribe" class="sent-message">Obuna soʻrovingiz yuborildi. Rahmat!</div>
+            </form>
+          </div>
         </div>
-      </div>
     </div>
 
-    
+
     <div class="container copyright text-center mt-4=">
       <p>©<span></span><strong class="px-1 sitename">MCHJ “E-POS Systems”</strong><span data-key="copyright">Barcha
           huquqlar
@@ -985,7 +985,7 @@
   <!-- Preloader -->
   <div id="preloader"></div>
 
-  
+
   <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
   <script src="assets/vendor/php-email-form/validate.js"></script>
   <script src="assets/vendor/aos/aos.js"></script>
