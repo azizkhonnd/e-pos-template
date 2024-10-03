@@ -72,6 +72,23 @@
 /*--------------------------------------------------------------
 # General Styling & Shared Classes
 --------------------------------------------------------------*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style-type: none;
+}
+
+
+.container__wrapper {
+  max-width: 1320px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+
 body {
   color: var(--default-color);
   background-color: var(--background-color);
@@ -94,7 +111,14 @@ body {
 }
 
 .steps-wrapper {
-  width: 600px;
+  min-width: 600px;
+}
+
+@media (max-width: 768px) {
+
+  .steps-wrapper {
+    min-width: 340px;
+  }
 }
 
 .highlight {
@@ -560,6 +584,7 @@ h6 {
   }
 
   .navmenu .dropdown ul {
+    width: 88%;
     position: static;
     display: none;
     z-index: 99;
