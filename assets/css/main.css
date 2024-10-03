@@ -1230,11 +1230,9 @@ section,
   position: relative;
   right: 0;
   border-radius: 50%;
-  max-width: 100%;
-  width: 50px;
   top: 20px;
-  height: 40px;
   display: flex;
+  padding: 7px 14.5px;
   align-items: center;
   justify-content: center;
 }
