@@ -370,6 +370,8 @@ const dropdownButton = document.getElementById('dropdownButton');
 const dropdownMenu = document.querySelector('.dropdown-menu');
 const dropdown = document.querySelector('.dropdown');
 
+
+
 dropdownButton.addEventListener('click', function () {
     dropdown.classList.toggle('open');
 });
@@ -441,14 +443,16 @@ const logoWrapper = document.getElementById('logo-wrapper');
 
 leftArrow.addEventListener('click', () => {
     logoWrapper.scrollBy({
-        left: -300, // Scroll 300px to the left
+        left: -300,
         behavior: 'smooth'
     });
 });
 
 rightArrow.addEventListener('click', () => {
     logoWrapper.scrollBy({
-        left: 300, // Scroll 300px to the right
+        left: 300,
         behavior: 'smooth'
     });
 });
+
+
